@@ -1,0 +1,7 @@
+<form ng-submit="editRestaurant(myRestaurant.id, city, name, address)">
+  City: <input data-ng-model="city" type="text"></input>
+  Name: <input data-ng-model="name" type="text"></input>
+  Address: <input data-ng-model="address" type="text"></input>
+  <button>Submit</button>
+</form>
+<button ng-click="cancelEdit()">Cancel</button>
