@@ -1,0 +1,12 @@
+<div class="details">
+  <div>ID: {{myRestaurant.id}}</div>
+  <div>City: {{myRestaurant.city}}</div>
+  <div>Name: {{myRestaurant.name}}</div>
+  <div>Address: {{myRestaurant.address}}</div>
+</div>
+
+<button ng-click="status.editing = !status.editing">Edit</button>
+
+<button ng-click="delete(myRestaurant)">Delete</button>
+
+<detailform ng-if="status.editing"></detailform>

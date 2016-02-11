@@ -1,0 +1,13 @@
+li {
+  color: blue;
+  text-decoration: underline;
+}
+
+li:hover {
+  color: purple;
+  cursor: pointer;
+}
+
+.details {
+  margin-top: 10px;
+}

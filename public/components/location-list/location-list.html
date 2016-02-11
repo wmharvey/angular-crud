@@ -1,0 +1,14 @@
+<div>Restaurant Locations</div>
+
+<ul ng-repeat="restaurant in restaurants">
+  <li ng-click="expand(restaurant, $index)">{{restaurant.id}}: {{restaurant.name}}</li>
+  <detail ng-if="restaurant.show"></detail>
+</ul>
+
+<h3>Add Restaurant</h3>
+<form ng-submit="addRestaurant(city, name, address)">
+  City: <input data-ng-model="city" type="text"></input>
+  Name: <input data-ng-model="name" type="text"></input>
+  Address: <input data-ng-model="address" type="text"></input>
+  <button>Submit</button>
+</form>
